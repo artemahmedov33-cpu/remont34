@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://remont34.pro/sitemap.xml
