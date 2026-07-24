@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Калькулятор стоимости ремонта — Уют-Сервис | Волгоград, Волжский</title>
+<meta name="description" content="Онлайн-калькулятор стоимости ремонта квартиры, дома или офиса в Волгограде и Волжском. Узнайте предварительную цену и срок за минуту. Точную смету составит замерщик бесплатно. Тел. 8 (906) 409-00-06">
+<meta name="theme-color" content="#55583A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2355583A'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='36' font-weight='bold' fill='%239BA05B' text-anchor='middle'%3E%D0%A3%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://remont34.pro/calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Калькулятор стоимости ремонта — Уют-Сервис">
+<meta property="og:description" content="Узнайте предварительную стоимость и срок ремонта за минуту. Точную смету составит замерщик бесплатно.">
+<meta property="og:url" content="https://remont34.pro/calculator.html">
+<meta property="og:image" content="https://remont34.pro/work2.jpg">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://remont34.pro/"},{"@type":"ListItem","position":2,"name":"Калькулятор ремонта","item":"https://remont34.pro/calculator.html"}]}
+</script>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body id="top">
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo">
+      <span class="mark">У</span>
+      <span><b>Уют-Сервис</b><small>строительная компания</small></span>
+    </a>
+    <nav class="menu">
+      <a href="index.html#services">Наши услуги</a>
+      <a href="calculator.html">Калькулятор</a>
+      <a href="online-estimates.html">Онлайн-смета</a>
+      <a href="portfolio.html">Наши работы</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="head-right">
+      <a href="tel:+79064090006" class="hphone"><span class="on">мы онлайн</span><b>8 (906) 409-00-06</b></a>
+      <a href="tel:+79064090006" class="phone-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg></a>
+      <button class="btn btn-dark hcta" onclick="openModal()">Оставить заявку <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M7 7h10v10"/></svg></button>
+      <button class="burger" id="burger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#services" onclick="toggleMenu()">Наши услуги</a>
+    <a href="calculator.html">Калькулятор</a>
+    <a href="online-estimates.html">Онлайн-смета</a>
+    <a href="portfolio.html">Наши работы</a>
+    <a href="contacts.html">Контакты</a>
+    <a href="tel:+79064090006" style="color:var(--sage-dark)">8 (906) 409-00-06</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="pw">Расчёт</div>
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Главная</a> / <span class="cur">Калькулятор ремонта</span></div>
+    <h1>Калькулятор стоимости <span class="grey">ремонта</span></h1>
+    <p class="sub">Ответьте на несколько вопросов — узнайте предварительную стоимость и срок ремонта за минуту. Точную смету бесплатно составит замерщик.</p>
+  </div>
+</section>
+
+<section class="sec calc-sec" id="calc" style="margin-top:10px">
+  <div class="wrap">
+    <div class="calc-wrap">
+      <div class="calc-main">
+        <div class="cstep">
+          <div class="cq"><i>1</i>Количество комнат</div>
+          <div class="opts" id="rooms">
+            <div class="opt active" data-v="1">1 комната</div>
+            <div class="opt" data-v="2">2 комнаты</div>
+            <div class="opt" data-v="3">3 комнаты</div>
+            <div class="opt" data-v="4">4+ / дом</div>
+          </div>
+        </div>
+        <div class="cstep">
+          <div class="cq"><i>2</i>Тип помещения</div>
+          <div class="opts" id="house">
+            <div class="opt active" data-k="1">Новостройка</div>
+            <div class="opt" data-k="1.15">Вторичка</div>
+            <div class="opt" data-k="1.1">Частный дом</div>
+            <div class="opt" data-k="1.05">Офис / магазин</div>
+          </div>
+        </div>
+        <div class="cstep">
+          <div class="cq"><i>3</i>Тип ремонта</div>
+          <div class="opts" id="type">
+            <div class="opt" data-p="3500">Косметический</div>
+            <div class="opt" data-p="4500">Черновой</div>
+            <div class="opt" data-p="6500">Капитальный</div>
+            <div class="opt active" data-p="8000">Под ключ</div>
+            <div class="opt" data-p="11000">Дизайнерский</div>
+          </div>
+        </div>
+        <div class="cstep">
+          <div class="cq"><i>4</i>Площадь помещения</div>
+          <div class="range-row"><div class="range-val"><b id="areaVal">45</b> м²</div><div class="range-hint">30 — 300 м²</div></div>
+          <input type="range" id="area" min="30" max="300" value="45" step="1" aria-label="Площадь помещения">
+        </div>
+        <div class="cstep">
+          <div class="cq"><i>5</i>Дополнительно</div>
+          <div class="checks" id="extras">
+            <label class="check" data-add="500" data-mode="perm2">
+              <span class="box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>
+              Разработать дизайн-проект
+            </label>
+            <label class="check active" data-add="0" data-mode="fixed">
+              <span class="box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>
+              Подбор чистового материала — бесплатно
+            </label>
+            <label class="check" data-add="700" data-mode="perm2">
+              <span class="box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>
+              Демонтаж старой отделки
+            </label>
+          </div>
+        </div>
+      </div>
+      <aside class="calc-aside">
+        <div class="lbl">Предварительная стоимость</div>
+        <div class="calc-total"><b id="totalVal">360 000</b> ₽</div>
+        <div class="calc-sub">Итоговую цену зафиксируем в договоре</div>
+        <div style="margin-top:22px">
+          <div class="cline"><span>Тип ремонта</span><span id="sumType">Под ключ</span></div>
+          <div class="cline"><span>Площадь</span><span id="sumArea">45 м²</span></div>
+          <div class="cline"><span>Цена за м²</span><span id="sumRate">8 000 ₽</span></div>
+          <div class="cline" id="sumExtraLine" style="display:none"><span>Доп. услуги</span><span id="sumExtra">+0 ₽</span></div>
+          <div class="cline"><span>Срок ремонта</span><span id="sumTerm">45 дней</span></div>
+        </div>
+        <div class="calc-form">
+          <form onsubmit="return submitLead(event)">
+            <input type="tel" name="phone" inputmode="tel" autocomplete="tel" aria-label="Телефон" placeholder="Ваш телефон" required>
+            <button type="submit" class="btn btn-sage">Узнать точную стоимость</button>
+          </form>
+          <div class="disc">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных</div>
+        </div>
+      </aside>
+    </div>
+    <p style="text-align:center;margin-top:24px;color:var(--muted);font-size:16px">Нужен детальный расчёт по каждому виду работ? <a href="online-estimates.html" style="color:var(--sage-dark);font-weight:700;border-bottom:1px solid">Откройте подробную смету →</a></p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="page-cta">
+      <h2>Нужна точная стоимость?</h2>
+      <p>Оставьте заявку — перезвоним за 10 минут и бесплатно приедем на замер в Волгограде и Волжском.</p>
+      <button class="btn btn-sage" onclick="openModal()">Вызвать замерщика</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><span class="mark">У</span><b>Уют-Сервис</b></div>
+        <p class="foot-about">Строительная компания. Ремонт и отделка квартир, домов, офисов и магазинов под ключ в Волгограде и Волжском с 2007 года.</p>
+        <a href="tel:+79064090006" style="display:block;font-weight:800;font-size:20px;margin-top:14px">8 (906) 409-00-06</a>
+      </div>
+      <div><h4>Услуги</h4><a href="repair-apartments.html">Ремонт квартир</a><a href="home-repair.html">Ремонт домов</a><a href="office-repair.html">Офисы и магазины</a><a href="cosmetic.html">Косметический</a><a href="budget.html">Бюджетный</a><a href="euro.html">Евроремонт</a><a href="designer.html">Дизайнерский</a><a href="decorative.html">Декоративная отделка</a><a href="interior-design.html">Дизайн интерьера</a></div>
+      <div><h4>Информация</h4><a href="calculator.html">Калькулятор</a><a href="online-estimates.html">Онлайн-смета</a><a href="prices.html">Прайс</a><a href="contract-warranty.html">Договор и гарантии</a><a href="insurance.html">Страхование</a><a href="ceilings.html">Натяжные потолки</a><a href="installments.html">Рассрочка и кредит</a><a href="stock.html">Акции</a><a href="faq.html">Вопросы и ответы</a></div>
+      <div><h4>Работы</h4><a href="portfolio.html">Портфолио</a><a href="apartments-photo.html">Фото квартир</a><a href="home-photo.html">Фото домов</a><a href="office-photo.html">Фото офисов</a><a href="reviews.html">Отзывы</a><a href="partners.html">Партнёры</a></div>
+      <div><h4>Контакты</h4><a href="tel:+79064090006">8 (906) 409-00-06</a><a href="mailto:remo34@yandex.ru">remo34@yandex.ru</a><a href="contacts.html">Волгоград · Волжский</a><a href="contacts.html">Ежедневно 9:00–21:00</a><button class="btn btn-sage" style="margin-top:14px" onclick="openModal()">Вызвать замерщика</button></div>
+    </div>
+    <div class="foot-bot"><span>© 2007–2026 «Уют-Сервис» · Ремонт под ключ. Все права защищены.</span><span>Рассрочка и кредит предоставляются банками-партнёрами.</span></div>
+  </div>
+</footer>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <h3>Бесплатный замер и смета</h3>
+    <p>Оставьте контакты — перезвоним, ответим на вопросы и договоримся о выезде замерщика.</p>
+    <form onsubmit="return submitLead(event)">
+      <input type="text" name="name" autocomplete="name" aria-label="Ваше имя" placeholder="Ваше имя" required>
+      <input type="tel" name="phone" inputmode="tel" autocomplete="tel" aria-label="Телефон" placeholder="Телефон" required>
+      <button type="submit" class="btn btn-sage">Отправить заявку</button>
+    </form>
+    <div class="disc">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных</div>
+  </div>
+</div>
+<script src="assets/app.js" defer></script>
+</body>
+</html>

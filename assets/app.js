@@ -85,3 +85,32 @@ if(document.querySelector('.smeta')){
   document.querySelectorAll('.smeta .sqty').forEach(function(i){i.addEventListener('input',smetaRecalc)});
   smetaRecalc();
 }
+
+// ===== QUICK CALCULATOR (calculator.html) =====
+if(document.getElementById('rooms')){
+  var cstate={rooms:1,house:1,rate:8000,typeName:'Под ключ',area:45},cextras=[];
+  var cfmt=function(n){return n.toLocaleString('ru-RU')};
+  var cplural=function(n,f){n=Math.abs(n)%100;var n1=n%10;if(n>10&&n<20)return f[2];if(n1>1&&n1<5)return f[1];if(n1==1)return f[0];return f[2]};
+  var ccalc=function(){
+    var eff=Math.round(cstate.rate*cstate.house),base=eff*cstate.area,extra=0;
+    cextras.forEach(function(el){if(el.classList.contains('active')){var a=parseFloat(el.dataset.add);extra+=el.dataset.mode==='perm2'?a*cstate.area:a;}});
+    var total=Math.round((base+extra)/1000)*1000;
+    var sp={'Косметический':0.55,'Черновой':0.7,'Капитальный':0.95,'Под ключ':1.0,'Дизайнерский':1.25};
+    var days=Math.max(14,Math.round(cstate.area*(sp[cstate.typeName]||1)*0.9));
+    document.getElementById('totalVal').textContent=cfmt(total);
+    document.getElementById('sumType').textContent=cstate.typeName;
+    document.getElementById('sumArea').textContent=cstate.area+' м²';
+    document.getElementById('sumRate').textContent=cfmt(eff)+' ₽';
+    var ex=document.getElementById('sumExtraLine');
+    if(extra>0){ex.style.display='';document.getElementById('sumExtra').textContent='+'+cfmt(extra)+' ₽';}else ex.style.display='none';
+    document.getElementById('sumTerm').textContent=days+' '+cplural(days,['день','дня','дней']);
+  };
+  var cbind=function(id,cb){var box=document.getElementById(id);if(!box)return;box.querySelectorAll('.opt').forEach(function(o){o.addEventListener('click',function(){box.querySelectorAll('.opt').forEach(function(x){x.classList.remove('active')});o.classList.add('active');cb(o);ccalc();});});};
+  cbind('rooms',function(o){cstate.rooms=o.dataset.v;var m={'1':40,'2':58,'3':80,'4':110};var a=m[o.dataset.v]||45;cstate.area=a;document.getElementById('area').value=a;document.getElementById('areaVal').textContent=a;});
+  cbind('house',function(o){cstate.house=parseFloat(o.dataset.k)});
+  cbind('type',function(o){cstate.rate=parseFloat(o.dataset.p);cstate.typeName=o.textContent.trim()});
+  var car=document.getElementById('area');
+  if(car)car.addEventListener('input',function(){cstate.area=parseInt(this.value);document.getElementById('areaVal').textContent=this.value;ccalc();});
+  document.querySelectorAll('#extras .check').forEach(function(el){cextras.push(el);el.addEventListener('click',function(e){e.preventDefault();el.classList.toggle('active');ccalc();});});
+  ccalc();
+}
