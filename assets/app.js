@@ -60,3 +60,28 @@ document.querySelectorAll('.faq-item').forEach(function(it){
   lb.addEventListener('click',function(e){if(e.target===lb)close();});
   document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();else if(e.key==='ArrowLeft')show(idx-1);else if(e.key==='ArrowRight')show(idx+1);});
 })();
+
+// ===== SMETA calculator (online-estimates) =====
+if(document.querySelector('.smeta')){
+  var sfmt=function(n){return Math.round(n).toLocaleString('ru-RU')};
+  var smetaRecalc=function(){
+    var grand=0;
+    document.querySelectorAll('.smeta-group').forEach(function(g){
+      var gs=0;
+      g.querySelectorAll('.srow').forEach(function(r){
+        var inp=r.querySelector('.sqty');if(!inp)return;
+        var q=parseFloat(inp.value)||0,p=parseFloat(inp.dataset.price)||0,s=q*p;
+        var sc=r.querySelector('.ssum');if(sc)sc.textContent=sfmt(s)+' ₽';
+        gs+=s;
+      });
+      var sub=g.querySelector('.sg-sub b');if(sub)sub.textContent=sfmt(gs)+' ₽';
+      grand+=gs;
+    });
+    var extra=grand*0.05;
+    document.getElementById('smetaWorks').textContent=sfmt(grand)+' ₽';
+    document.getElementById('smetaExtra').textContent=sfmt(extra)+' ₽';
+    document.getElementById('smetaTotal').textContent=sfmt(grand+extra)+' ₽';
+  };
+  document.querySelectorAll('.smeta .sqty').forEach(function(i){i.addEventListener('input',smetaRecalc)});
+  smetaRecalc();
+}

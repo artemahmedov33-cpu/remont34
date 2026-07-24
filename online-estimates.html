@@ -64,37 +64,103 @@
   </div>
 </section>
 
-<section class="sec" style="padding-top:24px">
-  <div class="wrap info2">
-    <div class="prose">
-      <p>Перед началом ремонта важно понимать, из чего складывается его стоимость. Мы подготовим для вас подробную смету, в которой распишем все виды работ по каждому помещению — так вы заранее увидите бюджет и сможете спланировать расходы.</p>
-      <p>Расчёт делает специалист компании индивидуально по вашему объекту. Стоимость зависит от площади, состояния помещения, вида ремонта и объёма работ. Итоговая цена фиксируется в договоре и не меняется в процессе.</p>
-      <h2>Что входит в смету</h2>
-      <p>Смета формируется по разделам — каждый вид работ считается отдельно. К итоговой сумме мы закладываем небольшой резерв на непредвиденные расходы, чтобы бюджет оставался прозрачным.</p>
-      <ul>
-        <li><b>Полы</b> — демонтаж старого покрытия, выравнивание основания, стяжка, финишное покрытие</li>
-        <li><b>Стены и перегородки</b> — возведение и выравнивание стен, штукатурка, шпаклёвка, отделка</li>
-        <li><b>Потолок</b> — выравнивание, гипсокартон, натяжные и подвесные системы</li>
-        <li><b>Демонтаж</b> — снос перегородок, снятие старой отделки, вывоз мусора</li>
-        <li><b>Сантехника</b> — разводка труб, установка сантехприборов, подключение</li>
-        <li><b>Электромонтаж</b> — прокладка проводки, щитки, розетки, выключатели, освещение</li>
-        <li><b>Прочие работы</b> — установка дверей, откосов, монтаж и другие сопутствующие работы</li>
-        <li><b>+ 5%</b> — резерв на дополнительные расходы</li>
-      </ul>
-      <p>Обратите внимание: расчёт учитывает <b>только стоимость работ</b> — цена отделочных и строительных материалов считается отдельно. Мы поможем подобрать материалы под ваш бюджет и рассчитаем их количество.</p>
-    </div>
-    <div class="info-photo"><img src="smeta_1.jpg" alt="Смета на ремонт — Уют-Сервис"></div>
-  </div>
-</section>
-
-<section class="sec" style="padding-top:0">
+<section class="sec" id="smeta" style="padding-top:24px">
   <div class="wrap">
-    <span class="eyebrow">Как это работает</span>
-    <h2 class="h2-two" style="margin:14px 0 10px">Три шага <span class="grey">до сметы</span></h2>
-    <div class="fcards">
-      <div class="fcard"><div class="fn">01</div><h3>Замерьте помещение</h3><p>Сделайте замеры по каждому помещению — площадь, высота потолков, число комнат. Этого достаточно для предварительного расчёта.</p></div>
-      <div class="fcard"><div class="fn">02</div><h3>Заполните заявку</h3><p>Оставьте контакты и опишите задачу. Специалист свяжется с вами, уточнит детали и подготовит смету по вашему объекту.</p></div>
-      <div class="fcard"><div class="fn">03</div><h3>Бесплатный выезд замерщика</h3><p>Замерщик бесплатно приедет на объект, снимет точные размеры и составит окончательную смету, которую мы зафиксируем в договоре.</p></div>
+    <span class="eyebrow">Онлайн-смета</span>
+    <h2 class="h2-two" style="margin:14px 0 10px">Рассчитайте <span class="grey">стоимость работ</span></h2>
+    <p class="prose" style="max-width:760px;margin-bottom:26px">Введите количество (м², м.п. или шт.) напротив нужных работ — сумма посчитается автоматически. Цены указаны <b>за работу, без стоимости материалов</b>. К итогу добавляется 5% на непредвиденные расходы. Это предварительный расчёт — точную смету бесплатно составит замерщик.</p>
+    <div class="smeta">
+      <div class="smeta-group">
+        <div class="sg-head">Полы</div>
+        <div class="srow srow-h"><span>Вид работ</span><span>Цена</span><span>Кол-во</span><span>Сумма</span></div>
+        <div class="srow"><span class="sname">Стяжка (с гидроизоляцией)</span><span class="sprice">400 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="400" aria-label="Стяжка (с гидроизоляцией) — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Наливной пол</span><span class="sprice">240 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="240" aria-label="Наливной пол — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Настил ГВЛ, фанеры, USB за 1 слой</span><span class="sprice">140 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="140" aria-label="Настил ГВЛ, фанеры, USB за 1 слой — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Настил плитки (устройство плинтуса ПВХ учтено во всех расценках)</span><span class="sprice">600 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="600" aria-label="Настил плитки (устройство плинтуса ПВХ учтено во всех расценках) — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Настил ламината</span><span class="sprice">240 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="240" aria-label="Настил ламината — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Настил линолеума</span><span class="sprice">150 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="150" aria-label="Настил линолеума — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Настил мозаики</span><span class="sprice">900 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="900" aria-label="Настил мозаики — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Настил паркетной доски, пробки или ламината по диагонали</span><span class="sprice">280 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="280" aria-label="Настил паркетной доски, пробки или ламината по диагонали — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="sg-sub">Итого за «Полы»: <b>0 ₽</b></div>
+      </div>
+      <div class="smeta-group">
+        <div class="sg-head">Стены и перегородки</div>
+        <div class="srow srow-h"><span>Вид работ</span><span>Цена</span><span>Кол-во</span><span>Сумма</span></div>
+        <div class="srow"><span class="sname">Монтаж перегородок из гипса ПГП</span><span class="sprice">250 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="250" aria-label="Монтаж перегородок из гипса ПГП — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Монтаж перегородок кирпичных</span><span class="sprice">600 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="600" aria-label="Монтаж перегородок кирпичных — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Монтаж перегородки из гипсокартона (ПВХ, МДФ)</span><span class="sprice">450 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="450" aria-label="Монтаж перегородки из гипсокартона (ПВХ, МДФ) — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Утепление и шумоизоляция перегородок</span><span class="sprice">130 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="130" aria-label="Утепление и шумоизоляция перегородок — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Облицовка стен по каркасу или устройство короба из гипсокартона ( ПВХ, МДФ)</span><span class="sprice">320 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="320" aria-label="Облицовка стен по каркасу или устройство короба из гипсокартона ( ПВХ, МДФ) — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Монтаж дверей межкомнатных</span><span class="sprice">2 000 ₽/шт</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="2000" aria-label="Монтаж дверей межкомнатных — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Выравниванеи стен</span><span class="sprice">330 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="330" aria-label="Выравниванеи стен — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Наклейка обоев (с подготовкой)</span><span class="sprice">355 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="355" aria-label="Наклейка обоев (с подготовкой) — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Покраска стен (с подготовкой)</span><span class="sprice">510 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="510" aria-label="Покраска стен (с подготовкой) — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Декоративная отделка штукатурка (шпатлевка, отделка)</span><span class="sprice">970 ₽/шт</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="970" aria-label="Декоративная отделка штукатурка (шпатлевка, отделка) — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Керамическая плитка</span><span class="sprice">650 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="650" aria-label="Керамическая плитка — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Искусственный камень и мозаика</span><span class="sprice">900 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="900" aria-label="Искусственный камень и мозаика — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Откосы,</span><span class="sprice">650 ₽/м.п.</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="650" aria-label="Откосы, — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="sg-sub">Итого за «Стены и перегородки»: <b>0 ₽</b></div>
+      </div>
+      <div class="smeta-group">
+        <div class="sg-head">Потолок</div>
+        <div class="srow srow-h"><span>Вид работ</span><span>Цена</span><span>Кол-во</span><span>Сумма</span></div>
+        <div class="srow"><span class="sname">Карнизы и молдинги (пенополиуретан)</span><span class="sprice">500 ₽/м.п.</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="500" aria-label="Карнизы и молдинги (пенополиуретан) — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Потолочный плинтус</span><span class="sprice">200 ₽/м.п.</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="200" aria-label="Потолочный плинтус — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Натяжные потолки</span><span class="sprice">500 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="500" aria-label="Натяжные потолки — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Шумоизоляция потолка</span><span class="sprice">200 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="200" aria-label="Шумоизоляция потолка — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Выравнивание в плоскость</span><span class="sprice">300 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="300" aria-label="Выравнивание в плоскость — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Реечные соединения</span><span class="sprice">400 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="400" aria-label="Реечные соединения — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Монтаж гипсокартонового потолка 1 уровень</span><span class="sprice">350 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="350" aria-label="Монтаж гипсокартонового потолка 1 уровень — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Монтаж гипсокартонового потолка 2 уровня</span><span class="sprice">480 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="480" aria-label="Монтаж гипсокартонового потолка 2 уровня — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Монтаж прямолинейного потолочного короба из гипсокартона, светодиодной или карнизной ниши,</span><span class="sprice">360 ₽/м.п.</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="360" aria-label="Монтаж прямолинейного потолочного короба из гипсокартона, светодиодной или карнизной ниши, — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Монтаж криволинейного короба из гипсокартона</span><span class="sprice">550 ₽/м.п.</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="550" aria-label="Монтаж криволинейного короба из гипсокартона — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Оклейка потолочными обоями (с подготовкой)</span><span class="sprice">400 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="400" aria-label="Оклейка потолочными обоями (с подготовкой) — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Покраска потолка (с подготовкой)</span><span class="sprice">530 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="530" aria-label="Покраска потолка (с подготовкой) — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Покраска короба (до 60 см шириной с подготовкой)</span><span class="sprice">510 ₽/м.п.</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="510" aria-label="Покраска короба (до 60 см шириной с подготовкой) — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Отделка световой и карнизной ниши</span><span class="sprice">450 ₽/м.п.</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="450" aria-label="Отделка световой и карнизной ниши — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="sg-sub">Итого за «Потолок»: <b>0 ₽</b></div>
+      </div>
+      <div class="smeta-group">
+        <div class="sg-head">Работы по демонтажу</div>
+        <div class="srow srow-h"><span>Вид работ</span><span>Цена</span><span>Кол-во</span><span>Сумма</span></div>
+        <div class="srow"><span class="sname">Демонтаж стяжки</span><span class="sprice">200 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="200" aria-label="Демонтаж стяжки — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Демонтаж основания пола деревянного</span><span class="sprice">150 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="150" aria-label="Демонтаж основания пола деревянного — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Демонтаж плинтуса</span><span class="sprice">50 ₽/шт</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="50" aria-label="Демонтаж плинтуса — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Демонтаж облицовки стен и старой краски</span><span class="sprice">60 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="60" aria-label="Демонтаж облицовки стен и старой краски — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Демонтаж кафельной плитки</span><span class="sprice">70 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="70" aria-label="Демонтаж кафельной плитки — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Демонтаж перегородки кирпичной</span><span class="sprice">200 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="200" aria-label="Демонтаж перегородки кирпичной — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Демонтаж перегородки гипсовой</span><span class="sprice">130 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="130" aria-label="Демонтаж перегородки гипсовой — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Демонтаж перегородки ж/б</span><span class="sprice">1 000 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="1000" aria-label="Демонтаж перегородки ж/б — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Снятие обоев</span><span class="sprice">40 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="40" aria-label="Снятие обоев — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Демонтаж дверных блоков без сохранения</span><span class="sprice">200 ₽/шт</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="200" aria-label="Демонтаж дверных блоков без сохранения — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Демонтаж шкафа, антресолей, короба и т.д.</span><span class="sprice">200 ₽/шт</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="200" aria-label="Демонтаж шкафа, антресолей, короба и т.д. — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="sg-sub">Итого за «Работы по демонтажу»: <b>0 ₽</b></div>
+      </div>
+      <div class="smeta-group">
+        <div class="sg-head">Сантехнические работы</div>
+        <div class="srow srow-h"><span>Вид работ</span><span>Цена</span><span>Кол-во</span><span>Сумма</span></div>
+        <div class="srow"><span class="sname">Замена стояков (отопления + хол. и гор. водоснабжения + канализации)</span><span class="sprice">3 500 ₽/шт</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="3500" aria-label="Замена стояков (отопления + хол. и гор. водоснабжения + канализации) — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Замена радиаторов отопления с подводкой</span><span class="sprice">2 000 ₽/шт</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="2000" aria-label="Замена радиаторов отопления с подводкой — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Подводка точек хол. и гор. водоснабжения и канализации</span><span class="sprice">800 ₽/шт</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="800" aria-label="Подводка точек хол. и гор. водоснабжения и канализации — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Установка сантехнических приборов (ванная + умывальник + унитаз + полотенцесушитель + мойка и т.д.)</span><span class="sprice">1 200 ₽/шт</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="1200" aria-label="Установка сантехнических приборов (ванная + умывальник + унитаз + полотенцесушитель + мойка и т.д.) — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="sg-sub">Итого за «Сантехнические работы»: <b>0 ₽</b></div>
+      </div>
+      <div class="smeta-group">
+        <div class="sg-head">Электромонтажные работы</div>
+        <div class="srow srow-h"><span>Вид работ</span><span>Цена</span><span>Кол-во</span><span>Сумма</span></div>
+        <div class="srow"><span class="sname">Количество светильников</span><span class="sprice">650 ₽/шт</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="650" aria-label="Количество светильников — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Количество выключателей и розеток (в т.ч. телевизионные и компьютерные)</span><span class="sprice">600 ₽/шт</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="600" aria-label="Количество выключателей и розеток (в т.ч. телевизионные и компьютерные) — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Щит освещения</span><span class="sprice">4 500 ₽/шт</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="4500" aria-label="Щит освещения — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="srow"><span class="sname">Теплый пол</span><span class="sprice">550 ₽/м²</span><span class="sqcell"><input class="sqty" type="number" min="0" step="1" inputmode="numeric" placeholder="0" data-price="550" aria-label="Теплый пол — количество"></span><span class="ssum">0 ₽</span></div>
+        <div class="sg-sub">Итого за «Электромонтажные работы»: <b>0 ₽</b></div>
+      </div>
+    </div>
+    <div class="smeta-total">
+      <div class="st-line"><span>Стоимость работ</span><b id="smetaWorks">0 ₽</b></div>
+      <div class="st-line"><span>Непредвиденные расходы (5%)</span><b id="smetaExtra">0 ₽</b></div>
+      <div class="st-line st-grand"><span>Итого</span><b id="smetaTotal">0 ₽</b></div>
+      <button class="btn btn-sage" onclick="openModal()" style="width:100%;justify-content:center;margin-top:6px">Отправить смету специалисту</button>
+      <p class="st-note">Расчёт предварительный и не учитывает стоимость материалов.</p>
     </div>
   </div>
 </section>
