@@ -6,10 +6,10 @@ function submitLead(e){e.preventDefault();var f=e.target;f.innerHTML='<div style
 
 // HERO SLIDER
 var heroSlides=[
-  {img:'work1.jpg',badge:'<b>15+ лет</b> делаем ремонт в Волгограде и Волжском'},
-  {img:'work4.jpg',badge:'<b>Под ключ</b> — от черновой до чистовой отделки'},
-  {img:'work2.jpg',badge:'<b>Дизайнерский</b> ремонт с подбором материалов'},
-  {img:'work3.jpg',badge:'<b>Офисы и магазины</b> — ремонт без остановки бизнеса'}
+  {img:'work1.webp',badge:'<b>15+ лет</b> делаем ремонт в Волгограде и Волжском'},
+  {img:'work4.webp',badge:'<b>Под ключ</b> — от черновой до чистовой отделки'},
+  {img:'work2.webp',badge:'<b>Дизайнерский</b> ремонт с подбором материалов'},
+  {img:'work3.webp',badge:'<b>Офисы и магазины</b> — ремонт без остановки бизнеса'}
 ];
 if(document.getElementById('heroImg')){
   var heroIdx=0, heroImg=document.getElementById('heroImg'), heroBadge=document.getElementById('heroBadge'), heroDots=document.getElementById('heroDots');
