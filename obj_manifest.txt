@@ -1,0 +1,32 @@
+apartments|5a-moscow|Московская 5а|8
+apartments|grand-avenue|Гранд Авеню|8
+apartments|volgograd-city|Волгоград Сити|8
+apartments|moscow-5a-2|Московская 5а 2|8
+apartments|selenge-11|Селенгинская 11|8
+apartments|fadeeva-64a|Фадеева 64а|8
+apartments|noformesana-5|Новоремесленная 5|8
+apartments|pugachev-16|Пугачевская 16|8
+apartments|novorossiysk|Новороссийская|8
+home|the-object-in-surovikino|Объект в Суровикино|8
+office|gomel-7|Гомельская, 7|8
+office|alpha-credit-repair-office|Альфа-Кредит ремонт офиса|8
+office|sales-office-start|Офис продаж Старт|8
+office|airport-service-soviet-4|Аэропорт-Сервис Советская 4|8
+office|office-donetsk|Офис Донецкая|8
+apartments|repin|Репина|8
+apartments|budget-repair|Бюджетный ремонт|8
+apartments|the-bathroom-in-volgograd|Санузел в Волгограде|5
+apartments|simon|Симонова|8
+apartments|hiroshima-4|Хиросимы 4|4
+apartments|apartment-in-the-dzerzhinsk-region|Новостройка в Дзержинском районе|7
+apartments|parkhomenko-2k|Пархоменко 2к|6
+apartments|prospekt-lenina-15|Проспект Ленина 15|8
+apartments|kuban|Кубанская|8
+apartments|moscow-8|Московская 8|8
+apartments|arbat|Арбат|8
+apartments|pugachev-5g|Пугачевская 5г|8
+apartments|sheksninskiy-81a|Шекснинская 81а|8
+apartments|arbat-2|Арбат 2|8
+apartments|goncharova-4|Гончарова 4|6
+apartments|komsomol-10|Комсомольская 10|8
+apartments|complex-bullfinches|Комплекс Снегири|6
